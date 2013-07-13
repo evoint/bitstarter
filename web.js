@@ -12,25 +12,11 @@ var readhtmlcontent = function(htmlfile) {
 	} catch (e) {
 	    if (e.code === 'ENOENT') {
 		return htmlcontent = fs.readFileSync(HTMLFILE_DEFAULT, "utf-8");
-
-//		return "File not found! " + e.message;
-
 	    } else {
-//		throw e;
 		return e.message;
 	    }
 	}	    
-
-//    return fs.readFileSync(htmlfile, "utf-8");
-
 };
-
-//var getbuffer = function(htmlfile) {    
-//    var htmlcontent = readhtmlcontent(htmlfile);
-//    var buffer = new Buffer(htmlcontent, "utf-8");
-//    return buffer;
-//    return htmlcontent;
-//};
 
 //Checks for command line arguments for a specified file to use
 var htmlfile = process.argv;
@@ -42,9 +28,6 @@ if (htmlfile.length > 2) {
 };
 	
 app.get('/', function(request, response) {    
-//    var buffer = new Buffer(256);
-//    buffer = getbuffer(htmlfile);
-
     var htmlcontent = readhtmlcontent(htmlfile);
     var buffer = new Buffer(htmlcontent, "utf-8");
     var htmlresponse = buffer.toString('utf-8');
