@@ -2,7 +2,7 @@ var express = require('express');
 var fs = require('fs');
 var HTMLFILE_DEFAULT = "index.html";
 
-var app = express.createServer(express.logger());
+var app = express(express.logger());
 
 // Reads content of file, if file not found error then it reads the default file
 var readhtmlcontent = function(htmlfile) {
@@ -32,6 +32,8 @@ app.get('/', function(request, response) {
     var htmlresponse = buffer.toString('utf-8');
     response.send(htmlresponse);
 });
+
+app.use(express.static(__dirname + '/assets'));
 
 var port = process.env.PORT || 8080;
 app.listen(port, function() {

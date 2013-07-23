@@ -2,14 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>My First Bitstarter</title>
+    <title>Bitstarter - Bitcoin funding to help fund Viewshop, a cutting edge ecommerce and social app for mobile and internet tv.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
-    <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,700,800,600,400,300' rel='stylesheet' type='text/css'>
     <style type="text/css">
       /* Large desktop */
@@ -45,7 +45,7 @@
        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
       }
       .heading, .subheading {
-       font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+       font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
        text-align: center;
       }
       p.lead {
@@ -56,6 +56,12 @@
       p {
        font-size: 18px;
        line-height: 24px;
+      }
+      .blue {
+       color: #426ce1;
+      }
+      .green {
+       color: #71da7d;
       }
 
       /* Video pitch and Action */
@@ -76,7 +82,66 @@
        color: white;
       }
 
-      /* Marketing Copy and Footer */
+      /* Customize the Carousel
+      -------------------------------------------------- */
+
+      .carousel-caption {
+       background-color: transparent;
+       top:0;
+       max-width: 320px;
+       padding-bottom: 25px;
+       padding-left: 35px;
+       padding-right: 35px;
+       padding-top: 25px;
+       margin: 0 0 25px;
+
+      }
+      .carousel-caption h2 {
+       margin: 0px;
+      }
+      .carousel-caption p {
+       margin: 0 0 25px;
+       padding: 0;
+       color: #000;
+       line-height: 1.7;
+      }
+      .carousel-caption .btn {
+       margin-top: 10px;
+      }
+
+      .carousel.carousel-fade .item {
+      -webkit-transition: opacity 0.5s ease-in-out;
+      -moz-transition: opacity 0.5s ease-in-out;
+      -ms-transition: opacity 0.5s ease-in-out;
+      -o-transition: opacity 0.5s ease-in-out;
+      transition: opacity 0.5s ease-in-out;
+      opacity:0;
+      }
+
+      .carousel.carousel-fade .active.item {
+      opacity:1;
+      }
+
+      .carousel.carousel-fade .active.left,
+      .carousel.carousel-fade .active.right {
+      left: 0;
+      z-index: 2;
+      opacity: 0;
+      filter: alpha(opacity=0);
+      }
+
+      .carousel.carousel-fade .next,
+      .carousel.carousel-fade .prev {
+      left: 0;
+      z-index: 1;
+      }
+
+      .carousel.carousel-fade .carousel-control {
+      z-index: 3;
+      }
+
+
+      /* Marketing copy and Footer */
       .copy {
        padding-top: 2.5%;
        padding-bottom: 2.5%;
@@ -113,7 +178,7 @@
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
+              <li><a href="#about">About Funding</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
@@ -130,14 +195,14 @@
       <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
     <div class="row-fluid heading">
       <div class="span12">
-	<h1>Product</h1>
+	<h1><span class="blue">View</span><span class="green">shop</span>.tv</h1>
       </div>
     </div>
     <div class="row-fluid subheading">
       <div class="span12">
 	<!-- Special typography from Bootstrap for lead paragraph. -->
         <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-	<p class="lead">One sentence description.</p>
+	<p class="lead">Instantly find and purchase any product or service that you see in a movie or tv series that you are watching.</p>
       </div>
     </div>
     <div class="row-fluid pitch">
@@ -195,6 +260,45 @@
     <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
     <!-- http://placehold.it -->
     <div class="row-fluid section1">
+      <div class="span9 offset2 asset">
+
+	<div id="carousel_fade" class="carousel slide carousel-fade">
+
+	  <!-- Carousel items -->
+	  <div class="carousel-inner">
+	    <div class="active item"><a href="#carousel_fade" data-slide-to="1"><img src="/img/bradpitt_yellow_header.jpg"></a>
+	      <div class="carousel-caption"><h2>Viewer satisfaction</h2>
+		<p>Like the look of those sunglasses Brad Pitt is wearing in Mr and Mrs Smith?<br>Buy them now or save it to your<br>viewshop app with a <a href="#carousel_fade" data-slide-to="1">single click</a><br>for reviewing later.
+		</p><p>
+		  Or share it with your friends and find<br>out what they think of them.<br>They may want a pair too in which case you can get a group discount.</p>
+	      </div>
+	    </div>
+	    <div class="item"><a href="#carousel_fade" data-slide-to="0"><img src="/img/olivernitro_sunglasses.jpg"></a></div>
+	  </div>
+	</div>
+      </div>
+    </div>
+    <div class="row-fluid section2">
+      <div class="span5 offset1 copy copy-right">
+	<p>
+	  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+          porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
+          mollis justo velit at nunc. Fusce nec egestas sem. Donec
+          fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
+          volutpat lorem ut congue malesuada. In facilisis scelerisque
+          turpis sed lacinia. Donec in orci lectus. Donec auctor semper
+          quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
+          risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
+          rutrum, nunc leo tempus nisl, eu mollis justo velit at
+          nunc. Fusce nec egestas sem. Donec fringilla.
+	</p>
+      </div>
+      <div class="span5 asset">
+	<img class="img-polaroid" src="http://placehold.it/480x300">
+      </div>      
+    </div>
+    <div class="row-fluid section3">
       <div class="span5 offset1 asset">
 	<img class="img-polaroid" src="http://placehold.it/480x300">
       </div>
@@ -214,7 +318,7 @@
 	</p>
       </div>
     </div>
-    <div class="row-fluid section2">
+    <div class="row-fluid section4">
       <div class="span5 offset1 copy copy-right">
 	<p>
 	  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
@@ -281,5 +385,10 @@
       </div>
     </div>
   </div>
+<script>
+$('.carousel').carousel({
+interval: false
+});
+</script>
 </body>
 </html>
