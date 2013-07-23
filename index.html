@@ -63,7 +63,9 @@
       .green {
        color: #71da7d;
       }
-
+      .red {
+       color: red;
+      }
       /* Video pitch and Action */
       .pitch {
        padding: 2.5% 0%;
@@ -85,6 +87,9 @@
       /* Customize the Carousel
       -------------------------------------------------- */
 
+      .carousel {
+       margin-top: 40px;
+      }
       .carousel-caption {
        background-color: transparent;
        top:0;
@@ -102,7 +107,7 @@
       .carousel-caption p {
        margin: 0 0 25px;
        padding: 0;
-       color: #000;
+       color: #444;
        line-height: 1.7;
       }
       .carousel-caption .btn {
@@ -145,10 +150,30 @@
       .copy {
        padding-top: 2.5%;
        padding-bottom: 2.5%;
-       text-align: justify;
       }
+      .copy p {
+       margin: 0 0 20px;
+       line-height: 1.7;
+       color: #444;
+      }
+      .copy ul {
+      padding-bottom: 0px;
+      padding-left: 25px;
+      padding-right: 0px;
+      padding-top: 0px;
+      margin: 0px;
+      color: #666;
+      }
+      .copy ul li {
+      margin: 0px 0px 8px;
+      }
+      
+
+/*       text-align: justify;*/
+
+      
       .asset {
-       padding: 2.5% 0%;
+       padding-top: 8%;
       }
       .footer {
        color: #cccccc;
@@ -195,7 +220,7 @@
       <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
     <div class="row-fluid heading">
       <div class="span12">
-	<h1><span class="blue">View</span><span class="green">shop</span>.tv</h1>
+	<h1><span class="blue">View</span><span class="green">shop</span><span class="red">.tv</span></h1>
       </div>
     </div>
     <div class="row-fluid subheading">
@@ -207,7 +232,7 @@
     </div>
     <div class="row-fluid pitch">
       <div class="span5 offset1 video">
-	<img class="img-polaroid" src="http://placehold.it/480x300">
+	<img class="img" src="/img/download_devices.png">
       </div>
 
       <!-- We define a new 'actions' div to contain statistics, order, and share buttons -->
@@ -260,7 +285,7 @@
     <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
     <!-- http://placehold.it -->
     <div class="row-fluid section1">
-      <div class="span9 offset2 asset">
+      <div class="span9 offset2">
 
 	<div id="carousel_fade" class="carousel slide carousel-fade">
 
@@ -279,63 +304,53 @@
       </div>
     </div>
     <div class="row-fluid section2">
+      <hr />
       <div class="span5 offset1 copy copy-right">
-	<p>
-	  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-          porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
-          mollis justo velit at nunc. Fusce nec egestas sem. Donec
-          fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
-          volutpat lorem ut congue malesuada. In facilisis scelerisque
-          turpis sed lacinia. Donec in orci lectus. Donec auctor semper
-          quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
-          risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
-          rutrum, nunc leo tempus nisl, eu mollis justo velit at
-          nunc. Fusce nec egestas sem. Donec fringilla.
-	</p>
+	<h1>View</h1>
+        <p>The viewshop.tv app provides various options of interaction during your viewing experience.</p>
+        <ul class="tiny-bullets">
+          <li>Save items for later review with one click while watching a movie so as not to disturb your viewing experience.</li>
+          <li>Control your viewshop.tv actions directly on your internet tv or via your mobile while others continue to enjoy a seamless viewing experience on the big screen.</li>
+          <li>Search, review and make purchasing decisions within the viewshop.tv app while simultaneously continuing to watch the programme using side-by-side or picture-in-picture mode.</li>
+          <li>Options to be notified when a product of interest is available in the viewshop.tv app.</li>
+          <li>Opt for alerts at the exact point in time a product appears in the movie or television series you are watching.</li>
+          <li>Choose to be notified directly on your internet tv platform or via the mobile or desktop app.</li>
+        </ul>
       </div>
       <div class="span5 asset">
-	<img class="img-polaroid" src="http://placehold.it/480x300">
+	<img class="asset-image" src="/img/features_view.jpg">
       </div>      
     </div>
     <div class="row-fluid section3">
+      <hr />
       <div class="span5 offset1 asset">
-	<img class="img-polaroid" src="http://placehold.it/480x300">
+	<img class="asset-image" src="/img/features_shop.jpg">
       </div>
       <div class="span5 copy">
-	<p>
-	  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-          porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
-          mollis justo velit at nunc. Fusce nec egestas sem. Donec
-          fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
-          volutpat lorem ut congue malesuada. In facilisis scelerisque
-          turpis sed lacinia. Donec in orci lectus. Donec auctor semper
-          quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
-          risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
-          rutrum, nunc leo tempus nisl, eu mollis justo velit at
-          nunc. Fusce nec egestas sem. Donec fringilla.
-	</p>
+	<h1>Shop</h1>
+        <p>Purchase any product or service you see within your favourite movies or television series.</p>
+        <ul class="tiny-bullets">
+          <li>Buy the exact same fashion and clothing products worn by your favourite movie stars in the movies of your choice. Get your hands on the same gadgets and electronics that spark your interest during your viewing experience.</li>
+          <li>Book flights and travel packages to the places you've seen in your favourite movies or television series and want to go and experience for yourself. Eat at the same restaurants and stay at the same hotels from your favourite scenes.</li>
+          <li>Purchase products directly through the viewshop.tv app or automatically locate local physical outlets stocking the item.</li>
+          <li>Can't find a product you've seen and want to get hold of? Just "Mark It" and add a short description and we will source it for you and add it to the database.</li>
+        </ul>
       </div>
     </div>
     <div class="row-fluid section4">
+      <hr />
       <div class="span5 offset1 copy copy-right">
-	<p>
-	  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-          porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
-          mollis justo velit at nunc. Fusce nec egestas sem. Donec
-          fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
-          volutpat lorem ut congue malesuada. In facilisis scelerisque
-          turpis sed lacinia. Donec in orci lectus. Donec auctor semper
-          quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
-          risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
-          rutrum, nunc leo tempus nisl, eu mollis justo velit at
-          nunc. Fusce nec egestas sem. Donec fringilla.
-	</p>
+	<h1>Social</h1>
+        <p>Seamless integration between your viewshop.tv apps and your social networks like twitter, facebook and foursquare.</p>
+        <ul class="tiny-bullets">
+          <li>Share with your friends on your social networks or directly with friends that have viewshop.tv accounts.</li>
+          <li>Read product reviews and discuss and gather the opinions of your friends before making any buying decisions.</li>
+          <li>Together with your friends use your group buying power to obtain discounted prices on the products you want, all within your viewshop.tv app running on your internet tv, mobile or desktop.
+	  </li>
+        </ul>
       </div>
       <div class="span5 asset">
-	<img class="img-polaroid" src="http://placehold.it/480x300">
+	<img class="asset-image" src="/img/features_social.jpg">
       </div>      
     </div>
 
@@ -343,30 +358,31 @@
       <!-- This brings in jquery.js and bootstrap.js as dependencies. -->
       <!-- http://twitter.github.io/bootstrap/javascript.html#collapse -->
     <div class="row-fluid faq">
+      <hr />
       <div class="span10 offset1">
 	<h3>FAQ</h3>
 	<div class="accordion" id="accordion2">
 	  <div class="accordion-group">
 	    <div class="accordion-heading">
 	      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-		FAQ Question 1?
+		When will you provide information on the funding options?
 	      </a>
 	    </div>
 	    <div id="collapseOne" class="accordion-body collapse">
 	      <div class="accordion-inner">
-		And here is answer 1.
+		Funding details and benefits will be uploaded soon, please check back soon.
 	      </div>
 	    </div>
 	  </div>
 	  <div class="accordion-group">
 	    <div class="accordion-heading">
 	      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-		FAQ Question 2?
+		What is the revenue model?
 	      </a>
 	    </div>
 	    <div id="collapseTwo" class="accordion-body collapse">
 	      <div class="accordion-inner">
-		And here is answer 2.
+		Details will be released soon, please be patient and check back shortly.
 	      </div>
 	    </div>
 	  </div>
