@@ -2,7 +2,7 @@ var express = require('express');
 var fs = require('fs');
 var HTMLFILE_DEFAULT = "index.html";
 
-var app = express();
+var app = express.createServer(express.logger());
 
 // Reads content of file, if file not found error then it reads the default file
 var readhtmlcontent = function(htmlfile) {
