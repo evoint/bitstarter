@@ -33,7 +33,9 @@ app.get('/', function(request, response) {
     response.send(htmlresponse);
 });
 
-app.use(express.static(__dirname + '/assets'));
+//Assigns a folder to serve static files if needed
+//Preferable to serve static files via a CDN or AmazonS3, than through node itself.
+//app.use(express.static(__dirname + '/assets'));
 
 var port = process.env.PORT || 8080;
 app.listen(port, function() {
